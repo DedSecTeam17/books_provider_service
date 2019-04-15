@@ -24,7 +24,7 @@ server.use(restify.plugins.bodyParser());
 // server.use(restify_jwt({secret: process.env.JWT_SECRET}).unless({path:['/auth']}));
 
 // when server listen connect to the data base
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
     mongoose.set('useFindAndModify',false);
     mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true}).then(()=>{
 
