@@ -45,6 +45,15 @@ function checkForType(cp, file) {
         cp('Error invalid image', false);
     }
 }
+
+
+
+
+
+
+
+
+
 module.exports.signIn = async function (req, res, next) {
 
     const {email, password} = req.body;
@@ -54,7 +63,7 @@ module.exports.signIn = async function (req, res, next) {
 
         // signing process using user object and client secret
 
-        const user_token = jwt.sign(user.toJSON(), process.env.JWT_SECRET, {expiresIn: '15m'});
+        const user_token = jwt.sign(user.toJSON(), process.env.JWT_SECRET, {expiresIn: '1500m'});
         const {iat, exp} = jwt.decode(user_token);
 
         sendJsonResponse(res, {iat, exp, user_token}, 200);
@@ -90,7 +99,11 @@ module.exports.signUp = async (req, res, next) => {
             }
         });
     });
-};
+}
+
+
+
+
 module.exports.getUser = async (req, res, next) => {
     if (req.headers && req.headers.authorization) {
         const authorization_header = req.headers.authorization;
@@ -155,6 +168,7 @@ module.exports.uploadProfileImage = async (req, res, next) => {
 
 
                 if (typeof user.profile != 'undefined') {
+
                     user.profile.profile_image_path = "http://localhost:3000/api/users/profile_image/" + req.file.filename.toString()
                 } else {
                     user.profile = {
@@ -267,4 +281,15 @@ module.exports.passwordChange = async (req, res) => {
 function sendJsonResponse(res, data, status) {
     res.status(status);
     res.send(data);
+}
+
+
+
+async function deleteFile(path) {
+    try {
+        await fs.remove(path)
+        console.log('success!')
+    } catch (err) {
+        console.error(err)
+    }
 }

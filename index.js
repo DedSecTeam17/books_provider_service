@@ -6,6 +6,8 @@ const express = require('express');
 const app = express();
 
 var  user_route=require('./routes/user');
+var  book_route=require('./routes/book');
+
 const bodyParser = require('body-parser');
 
 
@@ -55,6 +57,8 @@ db.on('open', () => {
     // require('./routes/comment')(server);
 
     app.use('/api',user_route);
+    app.use('/api',book_route);
+
 
     console.log(`server start on port ---> ${process.env.PORT}`);
 });

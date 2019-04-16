@@ -9,7 +9,14 @@ var profileSchema = new mongoose.Schema({
     phone_number: {type: String}
 });
 
-
+var  bookSchema=new mongoose.Schema({
+    title: {type: String, required: true},
+    author: {type: String, required: true},
+    book_image_path: {type: String},
+    publish_at: {type: String, required: true},
+    category_id: {type: String, required: true},
+    price: {type: String, required: true},
+});
 
 
 var userSchema = new mongoose.Schema({
@@ -17,8 +24,12 @@ var userSchema = new mongoose.Schema({
     password_reset_token:{type: String},
     email: {type: String, required: true, email: true,unique: true,},
     password: {type: String, required: true},
-    profile:profileSchema
+    profile:profileSchema,
+    books:[bookSchema]
 });
+
+
+
 
 userSchema.plugin(uniqueValidator);
 
