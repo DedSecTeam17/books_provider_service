@@ -7,6 +7,7 @@ const app = express();
 
 var  user_route=require('./routes/user');
 var  book_route=require('./routes/book');
+var  order_route=require('./routes/order');
 
 const bodyParser = require('body-parser');
 
@@ -58,6 +59,8 @@ db.on('open', () => {
 
     app.use('/api',user_route);
     app.use('/api',book_route);
+    app.use('/api',order_route);
+
 
 
     console.log(`server start on port ---> ${process.env.PORT}`);
