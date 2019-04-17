@@ -9,6 +9,8 @@ var  user_route=require('./routes/user');
 var  book_route=require('./routes/book');
 var  order_route=require('./routes/order');
 var  notification_route=require('./routes/notification');
+var  chat_route=require('./routes/chat');
+
 
 
 const bodyParser = require('body-parser');
@@ -63,6 +65,8 @@ db.on('open', () => {
     app.use('/api',book_route);
     app.use('/api',order_route);
     app.use('/api',notification_route);
+    app.use('/api',chat_route);
+
 
 
     console.log(`server start on port ---> ${process.env.PORT}`);
