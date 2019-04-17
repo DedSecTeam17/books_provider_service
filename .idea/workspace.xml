@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="176">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#1255#1636#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,18 +124,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="186">
+              <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding>
                 <element signature="e#118#334#0" expanded="true" />
                 <element signature="e#383#579#0" expanded="true" />
                 <element signature="e#632#1158#0" expanded="true" />
                 <element signature="e#791#958#0" expanded="true" />
                 <element signature="e#1211#1434#0" expanded="true" />
-                <element signature="e#1487#1693#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1378" />
     <option name="height" value="735" />
@@ -229,21 +225,6 @@
             <path>
               <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
               <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,12 +278,12 @@
       <workItem from="1555410802440" duration="496000" />
       <workItem from="1555411387617" duration="7516000" />
       <workItem from="1555440212166" duration="4469000" />
-      <workItem from="1555525338527" duration="5240000" />
+      <workItem from="1555525338527" duration="5959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51699000" />
+    <option name="totallyTimeSpent" value="52418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -446,13 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Notification.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -520,15 +494,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="186">
+          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding>
             <element signature="e#118#334#0" expanded="true" />
             <element signature="e#383#579#0" expanded="true" />
             <element signature="e#632#1158#0" expanded="true" />
             <element signature="e#791#958#0" expanded="true" />
             <element signature="e#1211#1434#0" expanded="true" />
-            <element signature="e#1487#1693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#1255#1636#0" expanded="true" />
           </folding>
         </state>
       </provider>

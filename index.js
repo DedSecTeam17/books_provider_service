@@ -4,6 +4,7 @@ const  restify_jwt=require('restify-jwt-community');
 require('dotenv').config()
 const express = require('express');
 const app = express();
+const  cors=require('cors');
 
 var  user_route=require('./routes/user');
 var  book_route=require('./routes/book');
@@ -15,6 +16,8 @@ var  chat_route=require('./routes/chat');
 
 const bodyParser = require('body-parser');
 
+
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
