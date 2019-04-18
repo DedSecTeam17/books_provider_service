@@ -204,7 +204,7 @@ module.exports.passwordReset = async (req, res) => {
             const updated_user = await User.findOneAndUpdate({email: user_email}, {
                 password_reset_token: token
             });
-            sendEmail(user_email, `http://localhost:3000/api/users/password_change/${token}`);
+            sendEmail(user_email, `http://localhost:4200/change_password?token=${token}`);
             sendJsonResponse(res, updated_user, 200);
         } else {
             sendJsonResponse(res, {"message": 'User with this email not found'}, 200);
