@@ -219,8 +219,8 @@ function sendEmail(email, link) {
         service: 'gmail',
 
         auth: {
-            user: "mohammedelamin21.me@gmail.com",
-            pass: "mohamed1230987654"
+            user: process.env.GMAIL,
+            pass: process.env.PASSWORD
         }
     });
     let mailOptions = {

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,20 +24,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="437">
+              <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="405">
+              <caret line="222" column="36" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="36" />
+              <folding>
+                <element signature="e#4308#5287#0" expanded="true" />
+                <element signature="e#4346#5283#0" expanded="true" />
+                <element signature="e#4793#5050#0" expanded="true" />
+                <element signature="e#5492#6189#0" expanded="true" />
+                <element signature="e#6445#7020#0" expanded="true" />
+                <element signature="e#7343#8387#0" expanded="true" />
+                <element signature="e#7531#8281#0" expanded="true" />
+                <element signature="e#7635#8269#0" expanded="true" />
+                <element signature="e#7928#8049#0" expanded="true" />
+                <element signature="n#!!block;n#deleteFile#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,7 +186,6 @@
         <option value="$PROJECT_DIR$/models/User.js" />
         <option value="$PROJECT_DIR$/routes/book.js" />
         <option value="$PROJECT_DIR$/controllers/book.js" />
-        <option value="$PROJECT_DIR$/controllers/user.js" />
         <option value="$PROJECT_DIR$/models/Order.js" />
         <option value="$PROJECT_DIR$/routes/order.js" />
         <option value="$PROJECT_DIR$/controllers/order.js" />
@@ -187,6 +196,7 @@
         <option value="$PROJECT_DIR$/routes/chat.js" />
         <option value="$PROJECT_DIR$/controllers/chat.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/controllers/user.js" />
       </list>
     </option>
   </component>
@@ -208,12 +218,22 @@
               <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
               <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="NBKnowledgePane" />
       <pane id="Scope" />
+      <pane id="NBKnowledgePane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,17 +282,18 @@
       <workItem from="1555440212166" duration="4469000" />
       <workItem from="1555525338527" duration="6291000" />
       <workItem from="1555602178520" duration="46000" />
+      <workItem from="1555607593480" duration="1491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52796000" />
+    <option name="totallyTimeSpent" value="54287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25869894" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -288,7 +309,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.56528926" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -333,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="80" selection-start-line="18" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -354,17 +368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="187" column="9" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
-          <folding>
-            <element signature="e#4793#5050#0" expanded="true" />
-            <element signature="n#!!block;n#deleteFile#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,7 +409,7 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -476,6 +479,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="222" column="36" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="36" />
+          <folding>
+            <element signature="e#4308#5287#0" expanded="true" />
+            <element signature="e#4346#5283#0" expanded="true" />
+            <element signature="e#4793#5050#0" expanded="true" />
+            <element signature="e#5492#6189#0" expanded="true" />
+            <element signature="e#6445#7020#0" expanded="true" />
+            <element signature="e#7343#8387#0" expanded="true" />
+            <element signature="e#7531#8281#0" expanded="true" />
+            <element signature="e#7635#8269#0" expanded="true" />
+            <element signature="e#7928#8049#0" expanded="true" />
+            <element signature="n#!!block;n#deleteFile#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
