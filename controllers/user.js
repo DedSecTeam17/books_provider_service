@@ -80,7 +80,12 @@ module.exports.signUp = async (req, res, next) => {
     const newUser = new User({
         email,
         password,
-        name
+        name,
+        profile:{
+            about : '',
+            phone_number : '',
+            job : ''
+        }
     });
     //password length 10
     bcrypt.genSalt(10, (err, salt) => {
@@ -192,6 +197,13 @@ module.exports.getProfileImage = (req, res) => {
     res.status(200);
     res.sendfile('./public/uploads/profiles_images/' + req.params.image_name);
 };
+
+
+
+module.exports.getProfileDate=(req,res)=>{
+
+}
+
 module.exports.passwordReset = async (req, res) => {
     const user_email = req.body.email;
 

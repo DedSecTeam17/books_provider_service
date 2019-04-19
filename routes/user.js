@@ -16,6 +16,8 @@ router.post('/users/:user_id/profile/upload_profile_image', restify_jwt({secret:
 router.post('/users', UsersController.signUp);
 router.post('/auth', UsersController.signIn);
 router.get('/users', restify_jwt({secret: 'secret'}), UsersController.getUser);
+router.get('/users/profile_data', restify_jwt({secret: 'secret'}), UsersController.getProfileDate);
+
 router.get('/users/profile_image/:image_name', UsersController.getProfileImage);
 router.post('/users/password_reset', UsersController.passwordReset);
 router.post('/users/password_change/:token', UsersController.passwordChange);
