@@ -377,7 +377,7 @@ module.exports.passwordUpdate=async  (req,res)=>{
             //   save new password
             } else {
             //   your old password wrong
-                return sendJsonResponse(res, {"message": "Password is wrong"}, 200);
+                return sendJsonResponse(res, {"message": "Password is wrong"}, 400);
 
             }
         });
