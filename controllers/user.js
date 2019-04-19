@@ -105,10 +105,6 @@ module.exports.signUp = async (req, res, next) => {
         });
     });
 }
-
-
-
-
 module.exports.getUser = async (req, res, next) => {
     if (req.headers && req.headers.authorization) {
         const authorization_header = req.headers.authorization;
@@ -206,9 +202,6 @@ module.exports.getProfileImage = (req, res) => {
     res.status(200);
     res.sendfile('./public/uploads/profiles_images/' + req.params.image_name);
 };
-
-
-
 module.exports.updateUser= async  (req,res)=>{
     if (req.headers && req.headers.authorization) {
         const authorization_header = req.headers.authorization;
@@ -255,7 +248,6 @@ module.exports.updateUser= async  (req,res)=>{
         sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
 }
-
 module.exports.passwordReset = async (req, res) => {
     const user_email = req.body.email;
 
@@ -342,13 +334,66 @@ module.exports.passwordChange = async (req, res) => {
 
 
 }
+
+module.exports.passwordUpdate=async  (req,res)=>{
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
+
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
+        var newPassword = req.body.new_password;
+        var oldPassword = req.body.old_password;
+        const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
+
+        const  user=await  User.findById({_id:decoded_user._id});
+
+
+        bcrypt.compare(oldPassword, user.password, (err, isMatch) => {
+            if (err) {
+                // throw err;
+                return sendJsonResponse(res, {"message": err}, 404);
+
+            }
+            if (isMatch) {
+                bcrypt.genSalt(10, (err, salt) => {
+                    //hash password
+                    bcrypt.hash(newPassword, salt, async (err, hashedPassword) => {
+                        // replace old password with hashed password
+                        newPassword = hashedPassword;
+                        try {
+                            // save user with hashed password
+                            var updatedUser = await User.findOneAndUpdate({_id:decoded_user._id}, {
+                                password: newPassword,
+                            });
+                            sendJsonResponse(res, updatedUser, 201);
+
+                        } catch (e) {
+                            return sendJsonResponse(res, {"message": "Fail to change password"}, 404);
+
+                        }
+                    });
+                });
+            //   save new password
+            } else {
+            //   your old password wrong
+                return sendJsonResponse(res, {"message": "Password is wrong"}, 404);
+
+            }
+        });
+
+
+        // decode user model using jwt verify using client secret and and clean token
+
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
+    }
+
+}
 function sendJsonResponse(res, data, status) {
     res.status(status);
     res.send(data);
 }
-
-
-
 async function deleteFile(path) {
     try {
         await fs.remove(path)

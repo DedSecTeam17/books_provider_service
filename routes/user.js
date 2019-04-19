@@ -22,5 +22,9 @@ router.get('/users/profile_image/:image_name', UsersController.getProfileImage);
 router.post('/users/password_reset', UsersController.passwordReset);
 router.post('/users/password_change/:token', UsersController.passwordChange);
 
+router.put('/users/update_password', UsersController.passwordUpdate);
+
+
+
 
 module.exports = router;
