@@ -134,7 +134,6 @@ module.exports.getUser = async (req, res, next) => {
         }
     } else {
         sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
-
     }
 };
 module.exports.createProfile = async (req, res, next) => {
@@ -200,8 +199,51 @@ module.exports.getProfileImage = (req, res) => {
 
 
 
-module.exports.getProfileDate=(req,res)=>{
+module.exports.updateUser= async  (req,res)=>{
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
 
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
+
+
+        try {
+
+            // decode user model using jwt verify using client secret and and clean token
+            const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
+
+
+
+
+
+            // check for password update
+
+
+
+
+            // find user using id from decoded user
+            const  oldUserDate= await  User.findById({_id: decoded_user._id});
+            const user = await User.findOneAndUpdate({_id:decoded_user._id},{
+                name: req.body.name===undefined ? oldUserDate.name : req.body.name,
+                email: req.body.email===undefined ? oldUserDate.email : req.body.email,
+                profile:{
+                    job:req.body.job===undefined ? oldUserDate.profile.job : req.body.job,
+                    about:req.body.about===undefined ? oldUserDate.profile.about : req.body.about,
+                    phone_number:req.body.phone_number===undefined ? oldUserDate.profile.phone_number : req.body.phone_number
+                }
+            });
+
+            sendJsonResponse(res, user, 200);
+
+
+        } catch (e) {
+            sendJsonResponse(res, e, 404);
+
+        }
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
+    }
 }
 
 module.exports.passwordReset = async (req, res) => {
