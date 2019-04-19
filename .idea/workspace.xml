@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
-    </list>
+    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +36,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            <state relative-caret-position="35">
+              <caret line="189" column="39" lean-forward="true" selection-start-line="189" selection-start-column="39" selection-end-line="189" selection-end-column="39" />
               <folding>
                 <element signature="e#2017#2162#0" expanded="true" />
                 <element signature="e#2082#2170#0" expanded="true" />
-                <element signature="e#5547#5804#0" expanded="true" />
                 <element signature="e#5585#6422#0" expanded="true" />
                 <element signature="e#6453#7000#0" expanded="true" />
                 <element signature="e#6651#6986#0" expanded="true" />
@@ -306,18 +302,17 @@
       <workItem from="1555525338527" duration="6291000" />
       <workItem from="1555602178520" duration="46000" />
       <workItem from="1555607593480" duration="2033000" />
-      <workItem from="1555674701786" duration="4990000" />
+      <workItem from="1555674701786" duration="5586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59819000" />
+    <option name="totallyTimeSpent" value="60415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -333,7 +328,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.72396696" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.72396696" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -516,12 +511,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="35">
+          <caret line="189" column="39" lean-forward="true" selection-start-line="189" selection-start-column="39" selection-end-line="189" selection-end-column="39" />
           <folding>
             <element signature="e#2017#2162#0" expanded="true" />
             <element signature="e#2082#2170#0" expanded="true" />
-            <element signature="e#5547#5804#0" expanded="true" />
             <element signature="e#5585#6422#0" expanded="true" />
             <element signature="e#6453#7000#0" expanded="true" />
             <element signature="e#6651#6986#0" expanded="true" />
