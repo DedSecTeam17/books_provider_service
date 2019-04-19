@@ -231,6 +231,7 @@ module.exports.updateUser= async  (req,res)=>{
                 name: req.body.name===undefined ? oldUserDate.name : req.body.name,
                 email: req.body.email===undefined ? oldUserDate.email : req.body.email,
                 profile:{
+                    profile_image_path : oldUserDate.profile.profile_image_path,
                     job:req.body.job===undefined ? oldUserDate.profile.job : req.body.job,
                     about:req.body.about===undefined ? oldUserDate.profile.about : req.body.about,
                     phone_number:req.body.phone_number===undefined ? oldUserDate.profile.phone_number : req.body.phone_number
