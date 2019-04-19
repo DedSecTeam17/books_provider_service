@@ -366,10 +366,10 @@ module.exports.passwordUpdate=async  (req,res)=>{
                             var updatedUser = await User.findOneAndUpdate({_id:decoded_user._id}, {
                                 password: newPassword,
                             });
-                            sendJsonResponse(res, {"message": "Updated Successfully"}, 200);
+                            sendJsonResponse(res, {"message": "Updated Successfully","status":200}, 200);
 
                         } catch (e) {
-                            return sendJsonResponse(res, {"message": "Fail to change password"}, 200);
+                            return sendJsonResponse(res, {"message": "Fail to change password","status":400}, 200);
 
                         }
                     });
@@ -377,7 +377,7 @@ module.exports.passwordUpdate=async  (req,res)=>{
             //   save new password
             } else {
             //   your old password wrong
-                return sendJsonResponse(res, {"message": "Password is wrong"}, 200);
+                return sendJsonResponse(res, {"message": "Password is wrong","status":400}, 200);
 
             }
         });
