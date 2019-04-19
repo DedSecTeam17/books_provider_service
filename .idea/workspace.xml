@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
     </list>
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="18" column="87" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="87" />
+            <state relative-caret-position="130">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -40,20 +39,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="235" column="8" lean-forward="true" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
+            <state relative-caret-position="242">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
               <folding>
                 <element signature="e#2017#2162#0" expanded="true" />
                 <element signature="e#2082#2170#0" expanded="true" />
-                <element signature="e#2701#3542#0" expanded="true" />
-                <element signature="e#3601#4244#0" expanded="true" />
-                <element signature="e#4346#5283#0" expanded="true" />
-                <element signature="e#4793#5050#0" expanded="true" />
-                <element signature="e#6456#6670#0" expanded="true" />
-                <element signature="e#6654#6941#0" expanded="true" />
+                <element signature="e#5547#5804#0" expanded="true" />
+                <element signature="e#5585#6422#0" expanded="true" />
+                <element signature="e#6453#7000#0" expanded="true" />
+                <element signature="e#6651#6986#0" expanded="true" />
                 <element signature="n#!!block;n#sendEmail#0" expanded="true" />
                 <element signature="e#6267#6403#0" expanded="true" />
                 <element signature="e#6310#6397#0" expanded="true" />
+                <element signature="n#!!block;n#sendJsonResponse#0" expanded="true" />
                 <element signature="n#!!block;n#deleteFile#0" expanded="true" />
               </folding>
             </state>
@@ -233,6 +231,24 @@
             <path>
               <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
               <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles_images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BooksProvidersService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BooksProvidersService" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -290,12 +306,12 @@
       <workItem from="1555525338527" duration="6291000" />
       <workItem from="1555602178520" duration="46000" />
       <workItem from="1555607593480" duration="2033000" />
-      <workItem from="1555674701786" duration="2577000" />
+      <workItem from="1555674701786" duration="4990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57406000" />
+    <option name="totallyTimeSpent" value="59819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -480,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="18" column="87" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -498,22 +507,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="235" column="8" lean-forward="true" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
+        <state relative-caret-position="242">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
           <folding>
             <element signature="e#2017#2162#0" expanded="true" />
             <element signature="e#2082#2170#0" expanded="true" />
-            <element signature="e#2701#3542#0" expanded="true" />
-            <element signature="e#3601#4244#0" expanded="true" />
-            <element signature="e#4346#5283#0" expanded="true" />
-            <element signature="e#4793#5050#0" expanded="true" />
-            <element signature="e#6456#6670#0" expanded="true" />
-            <element signature="e#6654#6941#0" expanded="true" />
+            <element signature="e#5547#5804#0" expanded="true" />
+            <element signature="e#5585#6422#0" expanded="true" />
+            <element signature="e#6453#7000#0" expanded="true" />
+            <element signature="e#6651#6986#0" expanded="true" />
             <element signature="n#!!block;n#sendEmail#0" expanded="true" />
             <element signature="e#6267#6403#0" expanded="true" />
             <element signature="e#6310#6397#0" expanded="true" />
+            <element signature="n#!!block;n#sendJsonResponse#0" expanded="true" />
             <element signature="n#!!block;n#deleteFile#0" expanded="true" />
           </folding>
         </state>

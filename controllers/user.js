@@ -162,35 +162,45 @@ module.exports.createProfile = async (req, res, next) => {
     }
 };
 module.exports.uploadProfileImage = async (req, res, next) => {
-    upload(req, res, async (err) => {
-        if (err) {
-            sendJsonResponse(res, {"message": err}, 200);
-        } else {
-
-            try {
-                const user = await User.findById({_id: req.params.user_id});
 
 
-                if (typeof user.profile != 'undefined') {
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
 
-                    user.profile.profile_image_path = "http://localhost:3000/api/users/profile_image/" + req.file.filename.toString()
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
+        const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
+
+
+
+            upload(req, res, async (err) => {
+                if (err) {
+                    sendJsonResponse(res, {"message": err}, 200);
                 } else {
-                    user.profile = {
-                        about: '',
-                        profile_image_path: "http://localhost:3000/api/users/profile_image/" + req.file.filename.toString(),
-                        phone_number: '',
-                        job: ''
-                    }
+                        const user = await User.findById(decoded_user._id);
+                        if (typeof user.profile != 'undefined') {
+
+                            user.profile.profile_image_path = "http://localhost:3000/api/users/profile_image/" + req.file.filename.toString()
+                        } else {
+                            user.profile = {
+                                about: '',
+                                profile_image_path: "http://localhost:3000/api/users/profile_image/" + req.file.filename.toString(),
+                                phone_number: '',
+                                job: ''
+                            }
+                        }
+                        const saved_user = await user.save();
+                        sendJsonResponse(res, {"image_path":saved_user.profile.profile_image_path}, 200);
                 }
-                const saved_user = await user.save();
+            });
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
+    }
 
-                sendJsonResponse(res, saved_user, 200);
-            } catch (e) {
-                sendJsonResponse(res, e, 404);
-            }
 
-        }
-    });
+
+
 };
 module.exports.getProfileImage = (req, res) => {
     res.status(200);

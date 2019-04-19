@@ -12,7 +12,7 @@ const UsersController = require('../controllers/user');
 
 
 router.post('/users/:user_id/profile', restify_jwt({secret: 'secret'}), UsersController.createProfile);
-router.post('/users/:user_id/profile/upload_profile_image', restify_jwt({secret: 'secret'}), UsersController.uploadProfileImage);
+router.post('/users/profile/upload_profile_image', restify_jwt({secret: 'secret'}), UsersController.uploadProfileImage);
 router.post('/users', UsersController.signUp);
 router.post('/auth', UsersController.signIn);
 router.get('/users', restify_jwt({secret: 'secret'}), UsersController.getUser);
