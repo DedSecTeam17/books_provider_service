@@ -148,11 +148,11 @@ module.exports.uploadBookImage = async (req, res, next) => {
                     const user = await User.findById({_id: decoded_user._id});
                     const book = user.books.id(req.params.book_id);
                     if (typeof book.book_image_path === 'undefined') {
-                        book.book_image_path = "http://localhost:3000/api/users/books/" + req.file.filename;
+                        book.book_image_path = "https://serene-wave-76375.herokuapp.com/api/users/books/" + req.file.filename;
 
                     } else {
-                        deleteFile('./public/uploads/books_images/' + book.book_image_path.replace('http://localhost:3000/api/users/books/', ''));
-                        book.book_image_path = "http://localhost:3000/api/users/books/" + req.file.filename;
+                        deleteFile('./public/uploads/books_images/' + book.book_image_path.replace('https://serene-wave-76375.herokuapp.com/api/users/books/', ''));
+                        book.book_image_path = "https://serene-wave-76375.herokuapp.com/api/users/books/" + req.file.filename;
                     }
                     const saved_user = await user.save();
                     sendJsonResponse(res, saved_user, 200);
@@ -222,7 +222,7 @@ module.exports.delete = async (req, res, next) => {
             const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
             const user = await User.findById({_id: decoded_user._id});
             const books = await user.books.id(req.params.book_id);
-            deleteFile('./public/uploads/books_images/' + books.book_image_path.replace('http://localhost:3000/api/users/books/', ''));
+            deleteFile('./public/uploads/books_images/' + books.book_image_path.replace('https://serene-wave-76375.herokuapp.com/api/users/books/', ''));
             books.remove();
             await user.save();
             sendJsonResponse(res, null, 200);

@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
+            <state relative-caret-position="35">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="e#1715#2435#0" expanded="true" />
                 <element signature="e#2543#2758#0" expanded="true" />
@@ -131,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/routes/book.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="34" />
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -218,10 +218,10 @@
         <option value="$PROJECT_DIR$/routes/replay.js" />
         <option value="$PROJECT_DIR$/controllers/replay.js" />
         <option value="$PROJECT_DIR$/controllers/user.js" />
-        <option value="$PROJECT_DIR$/controllers/book.js" />
         <option value="$PROJECT_DIR$/routes/book.js" />
         <option value="$PROJECT_DIR$/controllers/review.js" />
         <option value="$PROJECT_DIR$/routes/review.js" />
+        <option value="$PROJECT_DIR$/controllers/book.js" />
       </list>
     </option>
   </component>
@@ -332,18 +332,18 @@
       <workItem from="1555602178520" duration="46000" />
       <workItem from="1555607593480" duration="2033000" />
       <workItem from="1555674701786" duration="11440000" />
-      <workItem from="1555750957647" duration="9834000" />
+      <workItem from="1555750957647" duration="10603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76103000" />
+    <option name="totallyTimeSpent" value="76872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2700454" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700454" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -359,7 +359,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.72396696" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.72396696" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -576,18 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
-          <folding>
-            <element signature="e#1715#2435#0" expanded="true" />
-            <element signature="e#2543#2758#0" expanded="true" />
-            <element signature="e#3286#4252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/replay.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -602,10 +590,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#1715#2435#0" expanded="true" />
+            <element signature="e#2543#2758#0" expanded="true" />
+            <element signature="e#3286#4252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/book.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="34" />
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
