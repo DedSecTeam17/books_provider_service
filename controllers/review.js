@@ -123,7 +123,9 @@ module.exports.delete = async (req, res, next) => {
         const review = await user.books.id(req.params.book_id).reviews.id(req.params.review_id);
         review.remove();
         await user.save();
-        sendJsonResponse(res, null, 400);
+
+        sendJsonResponse(res, null, 200);
+
     } catch (e) {
         sendJsonResponse(res, e, 200);
 

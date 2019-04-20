@@ -12,9 +12,6 @@ const ReviewController = require('../controllers/review');
 
 
 router.get('/users/:user_id/books/:book_id/reviews', ReviewController.index);
-
-
-
 router.get('/users/:user_id/books/:book_id/reviews/:review_id', ReviewController.show);
 router.post('/users/:user_id/books/:book_id/reviews', ReviewController.create);
 router.put('/users/:user_id/books/:book_id/reviews/:review_id', ReviewController.update);

@@ -15,15 +15,15 @@ router.get('/users/:user_id/books',  BooksController.index);
 
 router.get('/users/:user_id/books/:book_id', BooksController.show);
 
-router.post('/users/:user_id/books', restify_jwt({secret: 'secret'}), BooksController.create);
+router.post('/users/books', restify_jwt({secret: 'secret'}), BooksController.create);
 
-router.post('/users/:user_id/books/:book_id', restify_jwt({secret: 'secret'}), BooksController.uploadBookImage);
+router.post('/users/books/:book_id', restify_jwt({secret: 'secret'}), BooksController.uploadBookImage);
 
 
 
-router.put('/users/:user_id/books/:book_id', restify_jwt({secret: 'secret'}), BooksController.update);
+router.put('/users/books/:book_id', restify_jwt({secret: 'secret'}), BooksController.update);
 
-router.delete('/users/:user_id/books/:book_id', restify_jwt({secret: 'secret'}), BooksController.delete);
+router.delete('/users/books/:book_id', restify_jwt({secret: 'secret'}), BooksController.delete);
 
 
 
@@ -32,3 +32,4 @@ router.get('/users/books/:book_name', BooksController.getBookImage);
 
 
 module.exports = router;
+

@@ -215,17 +215,6 @@ module.exports.updateUser= async  (req,res)=>{
 
             // decode user model using jwt verify using client secret and and clean token
             const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
-
-
-
-
-
-            // check for password update
-
-
-
-
-            // find user using id from decoded user
             const  oldUserDate= await  User.findById({_id: decoded_user._id});
             const user = await User.findOneAndUpdate({_id:decoded_user._id},{
                 name: req.body.name===undefined ? oldUserDate.name : req.body.name,
@@ -239,7 +228,6 @@ module.exports.updateUser= async  (req,res)=>{
             });
 
             sendJsonResponse(res, user, 200);
-//development.me23@gmail.com
 
         } catch (e) {
             sendJsonResponse(res, e, 404);
@@ -249,6 +237,19 @@ module.exports.updateUser= async  (req,res)=>{
         sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports.passwordReset = async (req, res) => {
     const user_email = req.body.email;
 

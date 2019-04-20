@@ -77,27 +77,44 @@ module.exports.show = async (req, res, next) => {
 
 module.exports.create = async (req, res, next) => {
 
-    try {
-        const user = await User.findById({_id: req.params.user_id});
-        const book = user.books;
 
-        const {title, author, book_image_path, publish_at, category_id, price} = req.body;
-        book.push({
-            title: title,
-            author: author,
-            // book_image_path : book_image_path ,
-            publish_at: publish_at,
-            category_id: category_id,
-            price: price
-        });
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
 
-        const saved_user = await user.save();
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
 
-        sendJsonResponse(res, saved_user, 200);
 
-    } catch (e) {
-        sendJsonResponse(res, e.message, 200);
+        try {
+            const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
 
+            const user = await User.findById({_id: decoded_user._id});
+            const book = user.books;
+
+            const {title, author, publish_at, category_id, price} = req.body;
+            book.push({
+                title: title,
+                author: author,
+                // book_image_path : book_image_path ,
+                publish_at: publish_at,
+                category_id: category_id,
+                price: price
+            });
+
+            const saved_user = await user.save();
+
+            sendJsonResponse(res, saved_user, 200);
+
+
+            sendJsonResponse(res, user, 200);
+
+        } catch (e) {
+            sendJsonResponse(res, e, 404);
+
+        }
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
 
 
@@ -110,67 +127,114 @@ module.exports.getBookImage = (req, res) => {
 };
 
 module.exports.uploadBookImage = async (req, res, next) => {
-    upload(req, res, async (err) => {
-        if (err) {
-            sendJsonResponse(res, err, 200);
 
-        } else {
-            try {
-                const user = await User.findById({_id: req.params.user_id});
-                const book = user.books.id(req.params.book_id);
 
-                console.log(book.book_image_path)
-                if (typeof book.book_image_path === 'undefined') {
-                    book.book_image_path = "http://localhost:3000/api/users/books/" + req.file.filename;
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
+
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
+
+
+        try {
+
+            const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
+
+            upload(req, res, async (err) => {
+                if (err) {
+                    sendJsonResponse(res, err, 200);
 
                 } else {
-                    deleteFile('./public/uploads/books_images/' + book.book_image_path.replace('http://localhost:3000/api/users/books/', ''));
-                    book.book_image_path = "http://localhost:3000/api/users/books/" + req.file.filename;
-                }
-                const saved_user = await user.save();
-                sendJsonResponse(res, saved_user, 200);
-            } catch (e) {
-                sendJsonResponse(res, e.message, 200);
+                    const user = await User.findById({_id: decoded_user._id});
+                    const book = user.books.id(req.params.book_id);
+                    if (typeof book.book_image_path === 'undefined') {
+                        book.book_image_path = "http://localhost:3000/api/users/books/" + req.file.filename;
 
-            }
+                    } else {
+                        deleteFile('./public/uploads/books_images/' + book.book_image_path.replace('http://localhost:3000/api/users/books/', ''));
+                        book.book_image_path = "http://localhost:3000/api/users/books/" + req.file.filename;
+                    }
+                    const saved_user = await user.save();
+                    sendJsonResponse(res, saved_user, 200);
+
+                }
+            });
+
+        } catch (e) {
+            sendJsonResponse(res, e, 404);
+
         }
-    });
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
+    }
 
 
 }
 
 
 module.exports.update = async (req, res, next) => {
-    try {
-        const user = await User.findById({_id: req.params.user_id});
-        const book = user.books.id(req.params.book_id);
-        book.set(req.body);
 
-        const saved_user = await user.save();
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
 
-        sendJsonResponse(res, saved_user, 200);
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
 
-    } catch (e) {
-        sendJsonResponse(res, e.message, 200);
 
+        try {
+            // decode user model using jwt verify using client secret and and clean token
+            const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
+            // find user using id from decoded user
+            const user = await User.findById(decoded_user._id);
+
+            const book = user.books.id(req.params.book_id);
+            book.set(req.body);
+            const saved_user = await user.save();
+
+            sendJsonResponse(res, saved_user, 200);
+
+        } catch (e) {
+            sendJsonResponse(res, e, 404);
+
+        }
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
+
+
 }
 
 
 module.exports.delete = async (req, res, next) => {
-    try {
-        const user = await User.findById({_id: req.params.user_id});
-        const books = await user.books.id(req.params.book_id);
-        deleteFile('./public/uploads/books_images/' + books.book_image_path.replace('http://localhost:3000/api/users/books/', ''));
-        books.remove();
-        await user.save();
 
-        sendJsonResponse(res, null, 200);
+    if (req.headers && req.headers.authorization) {
+        const authorization_header = req.headers.authorization;
+        const size = authorization_header.length;
 
-    } catch (e) {
-        sendJsonResponse(res, e, 200);
+        // substring JWT string from header  with space to get clean token
+        const user_token = authorization_header.substr(4, size);
 
+
+        try {
+
+            // decode user model using jwt verify using client secret and and clean token
+            const decoded_user = jwt.verify(user_token, process.env.JWT_SECRET);
+            const user = await User.findById({_id: decoded_user._id});
+            const books = await user.books.id(req.params.book_id);
+            deleteFile('./public/uploads/books_images/' + books.book_image_path.replace('http://localhost:3000/api/users/books/', ''));
+            books.remove();
+            await user.save();
+            sendJsonResponse(res, null, 200);
+        } catch (e) {
+            sendJsonResponse(res, e, 404);
+
+        }
+    } else {
+        sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
+
 }
 
 
@@ -188,3 +252,5 @@ function sendJsonResponse(res, data, status) {
     res.status(status);
     res.send(data);
 }
+
+
