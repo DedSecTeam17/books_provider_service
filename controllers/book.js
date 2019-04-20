@@ -104,10 +104,9 @@ module.exports.create = async (req, res, next) => {
 
             const saved_user = await user.save();
 
-            sendJsonResponse(res, saved_user, 200);
+            sendJsonResponse(res, saved_user.books[saved_user.books.length-1], 200);
 
 
-            sendJsonResponse(res, user, 200);
 
         } catch (e) {
             sendJsonResponse(res, e, 404);
