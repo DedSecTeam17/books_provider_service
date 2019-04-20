@@ -11,6 +11,10 @@ var  book_route=require('./routes/book');
 var  order_route=require('./routes/order');
 var  notification_route=require('./routes/notification');
 var  chat_route=require('./routes/chat');
+var  review_route=require('./routes/review');
+var  replay_route=require('./routes/replay');
+
+
 
 
 
@@ -69,6 +73,9 @@ db.on('open', () => {
     app.use('/api',order_route);
     app.use('/api',notification_route);
     app.use('/api',chat_route);
+    app.use('/api',review_route);
+    app.use('/api',replay_route);
+
 
 
 

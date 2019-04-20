@@ -26,5 +26,8 @@ router.put('/users/update_password', UsersController.passwordUpdate);
 
 
 
+//reviews
+
+
 
 module.exports = router;

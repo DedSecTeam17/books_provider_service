@@ -9,6 +9,23 @@ var profileSchema = new mongoose.Schema({
     phone_number: {type: String}
 });
 
+
+var  replaySchema=new mongoose.Schema({
+    provider_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
+    replay: {type: String, required: true},
+});
+
+
+var  reviewsSchema=new mongoose.Schema({
+    customer_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
+    rating:{type:Number,required:true},
+    review: {type: String, required: true},
+    replays: [replaySchema]
+});
+
+
+//replays
+
 var  bookSchema=new mongoose.Schema({
     title: {type: String, required: true},
     author: {type: String, required: true},
@@ -16,6 +33,9 @@ var  bookSchema=new mongoose.Schema({
     publish_at: {type: String, required: true},
     category_id: {type: String, required: true},
     price: {type: String, required: true},
+    reviews:[
+        reviewsSchema
+    ]
 });
 
 
@@ -32,8 +52,6 @@ var userSchema = new mongoose.Schema({
 
 
 userSchema.plugin(uniqueValidator);
-
-
 
 
 userSchema.plugin(timestamp);
