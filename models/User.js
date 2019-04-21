@@ -15,6 +15,7 @@ var  replaySchema=new mongoose.Schema({
     replay: {type: String, required: true},
 });
 
+replaySchema.plugin(timestamp);
 
 var  reviewsSchema=new mongoose.Schema({
     customer_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
@@ -23,6 +24,7 @@ var  reviewsSchema=new mongoose.Schema({
     replays: [replaySchema]
 });
 
+reviewsSchema.plugin(timestamp);
 
 //replays
 
@@ -37,6 +39,7 @@ var  bookSchema=new mongoose.Schema({
         reviewsSchema
     ]
 });
+bookSchema.plugin(timestamp);
 
 
 var userSchema = new mongoose.Schema({

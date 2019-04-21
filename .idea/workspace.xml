@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="" />
+    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="1058">
               <caret line="246" selection-start-line="246" selection-end-line="246" />
-              <folding>
-                <element signature="e#6191#7831#0" expanded="true" />
-                <element signature="e#6945#7573#0" expanded="true" />
-                <element signature="e#7143#7559#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="1610">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -50,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="391">
               <caret line="17" column="64" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="64" />
             </state>
           </provider>
@@ -59,14 +56,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="943">
               <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
               <folding>
-                <element signature="e#1432#1664#0" expanded="true" />
-                <element signature="e#1715#1968#0" expanded="true" />
-                <element signature="e#2021#2636#0" expanded="true" />
                 <element signature="e#2325#2454#0" expanded="true" />
-                <element signature="e#2681#4052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,15 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/replay.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="126" column="17" lean-forward="true" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
-              <folding>
-                <element signature="e#1432#1699#0" expanded="true" />
-                <element signature="e#1750#2038#0" expanded="true" />
-                <element signature="e#2091#2628#0" expanded="true" />
-                <element signature="e#2533#2662#0" expanded="true" />
-                <element signature="e#2681#3063#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1012">
+              <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -100,37 +86,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="414">
               <caret line="31" column="19" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
               <folding>
                 <element signature="e#188#316#0" expanded="true" />
-                <element signature="e#360#472#0" expanded="true" />
-                <element signature="e#543#725#0" expanded="true" />
-                <element signature="e#634#650#0" expanded="true" />
-                <element signature="e#665#917#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
-              <folding>
-                <element signature="e#1715#2435#0" expanded="true" />
-                <element signature="e#2543#2758#0" expanded="true" />
-                <element signature="e#3286#4252#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/book.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="224" column="128" selection-start-line="224" selection-start-column="128" selection-end-line="224" selection-end-column="128" />
+              <folding>
+                <element signature="e#3413#4998#0" expanded="true" />
+                <element signature="e#3867#4814#0" expanded="true" />
+                <element signature="e#5051#6041#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
+            <state relative-caret-position="437">
               <caret line="19" column="34" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
@@ -139,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="367" column="64" lean-forward="true" selection-start-line="367" selection-start-column="64" selection-end-line="367" selection-end-column="64" />
+            <state relative-caret-position="1771">
+              <caret line="367" column="64" selection-start-line="367" selection-start-column="64" selection-end-line="367" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -168,11 +150,11 @@
       <find>notifications</find>
       <find>NotificationController</find>
       <find>Notification</find>
-      <find>http://localhost:3000</find>
       <find>UsersController</find>
       <find>book</find>
       <find>ReviewController</find>
       <find>/:user_id</find>
+      <find>http://localhost:3000</find>
     </findStrings>
     <replaceStrings>
       <replace>router</replace>
@@ -187,10 +169,10 @@
       <replace>chats</replace>
       <replace>ChatController</replace>
       <replace>Chat</replace>
-      <replace>https://serene-wave-76375.herokuapp.com</replace>
       <replace>ReviewController</replace>
       <replace>books</replace>
       <replace>ReplayController</replace>
+      <replace>https://serene-wave-76375.herokuapp.com</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -332,18 +314,18 @@
       <workItem from="1555602178520" duration="46000" />
       <workItem from="1555607593480" duration="2033000" />
       <workItem from="1555674701786" duration="11440000" />
-      <workItem from="1555750957647" duration="10603000" />
+      <workItem from="1555750957647" duration="11307000" />
+      <workItem from="1555845283333" duration="429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76872000" />
+    <option name="totallyTimeSpent" value="78005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700454" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27382752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -508,70 +490,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/replay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="126" column="17" lean-forward="true" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
-          <folding>
-            <element signature="e#1432#1699#0" expanded="true" />
-            <element signature="e#1750#2038#0" expanded="true" />
-            <element signature="e#2091#2628#0" expanded="true" />
-            <element signature="e#2533#2662#0" expanded="true" />
-            <element signature="e#2681#3063#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="367" column="64" lean-forward="true" selection-start-line="367" selection-start-column="64" selection-end-line="367" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
-          <folding>
-            <element signature="e#188#316#0" expanded="true" />
-            <element signature="e#360#472#0" expanded="true" />
-            <element signature="e#543#725#0" expanded="true" />
-            <element signature="e#634#650#0" expanded="true" />
-            <element signature="e#665#917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="1058">
           <caret line="246" selection-start-line="246" selection-end-line="246" />
-          <folding>
-            <element signature="e#6191#7831#0" expanded="true" />
-            <element signature="e#6945#7573#0" expanded="true" />
-            <element signature="e#7143#7559#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="943">
           <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
           <folding>
-            <element signature="e#1432#1664#0" expanded="true" />
-            <element signature="e#1715#1968#0" expanded="true" />
-            <element signature="e#2021#2636#0" expanded="true" />
             <element signature="e#2325#2454#0" expanded="true" />
-            <element signature="e#2681#4052#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -583,29 +528,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/review.js">
+    <entry file="file://$PROJECT_DIR$/controllers/replay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="64" />
+        <state relative-caret-position="1012">
+          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/book.js">
+    <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="414">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
           <folding>
-            <element signature="e#1715#2435#0" expanded="true" />
-            <element signature="e#2543#2758#0" expanded="true" />
-            <element signature="e#3286#4252#0" expanded="true" />
+            <element signature="e#188#316#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="437">
           <caret line="19" column="34" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="367" column="64" selection-start-line="367" selection-start-column="64" selection-end-line="367" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="224" column="128" selection-start-line="224" selection-start-column="128" selection-end-line="224" selection-end-column="128" />
+          <folding>
+            <element signature="e#3413#4998#0" expanded="true" />
+            <element signature="e#3867#4814#0" expanded="true" />
+            <element signature="e#5051#6041#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
