@@ -28,7 +28,7 @@ router.get('/orders/provider/:provider_id',  OrderController.index);
 router.get('/orders/:order_id',  OrderController.show);
 
 // moved to customer service
-router.post('/orders/provider/:provider_id/customer/:customer_id/book/:book_id', restify_jwt({secret: 'secret'}), OrderController.create);
+router.post('/orders/provider/:provider_id/customer/:customer_id/book/:book_id', OrderController.create);
 
 router.put('/orders/:order_id', restify_jwt({secret: 'secret'}), OrderController.update);
 

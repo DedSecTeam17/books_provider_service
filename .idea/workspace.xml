@@ -53,13 +53,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+            <state relative-caret-position="35">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="e#2325#2454#0" expanded="true" />
+                <element signature="e#3116#3455#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="207">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="e#188#316#0" expanded="true" />
               </folding>
@@ -95,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="1334">
               <caret line="224" column="128" selection-start-line="224" selection-start-column="128" selection-end-line="224" selection-end-column="128" />
               <folding>
                 <element signature="e#3413#4998#0" expanded="true" />
@@ -194,16 +195,16 @@
         <option value="$PROJECT_DIR$/routes/chat.js" />
         <option value="$PROJECT_DIR$/controllers/chat.js" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/models/User.js" />
         <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/routes/replay.js" />
         <option value="$PROJECT_DIR$/controllers/replay.js" />
         <option value="$PROJECT_DIR$/controllers/user.js" />
         <option value="$PROJECT_DIR$/routes/book.js" />
-        <option value="$PROJECT_DIR$/controllers/review.js" />
         <option value="$PROJECT_DIR$/routes/review.js" />
         <option value="$PROJECT_DIR$/controllers/book.js" />
+        <option value="$PROJECT_DIR$/models/User.js" />
+        <option value="$PROJECT_DIR$/controllers/review.js" />
       </list>
     </option>
   </component>
@@ -219,6 +220,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="NBKnowledgePane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,7 +265,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="NBKnowledgePane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,16 +317,18 @@
       <workItem from="1555674701786" duration="11440000" />
       <workItem from="1555750957647" duration="11307000" />
       <workItem from="1555845283333" duration="429000" />
+      <workItem from="1555848445056" duration="1843000" />
+      <workItem from="1555868322956" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78005000" />
+    <option name="totallyTimeSpent" value="79870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27382752" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28290468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -341,7 +344,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.72396696" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5008264" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -511,16 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/review.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
-          <folding>
-            <element signature="e#2325#2454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/replay.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -537,10 +530,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="207">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="e#188#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="224" column="128" selection-start-line="224" selection-start-column="128" selection-end-line="224" selection-end-column="128" />
+          <folding>
+            <element signature="e#3413#4998#0" expanded="true" />
+            <element signature="e#3867#4814#0" expanded="true" />
+            <element signature="e#5051#6041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -559,14 +564,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/book.js">
+    <entry file="file://$PROJECT_DIR$/controllers/review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="224" column="128" selection-start-line="224" selection-start-column="128" selection-end-line="224" selection-end-column="128" />
+        <state relative-caret-position="35">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <element signature="e#3413#4998#0" expanded="true" />
-            <element signature="e#3867#4814#0" expanded="true" />
-            <element signature="e#5051#6041#0" expanded="true" />
+            <element signature="e#2325#2454#0" expanded="true" />
+            <element signature="e#3116#3455#0" expanded="true" />
           </folding>
         </state>
       </provider>
