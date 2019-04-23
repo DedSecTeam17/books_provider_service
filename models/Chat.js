@@ -7,7 +7,10 @@ var uniqueValidator = require('mongoose-unique-validator');
 
 var chatSchema = new mongoose.Schema({
     provider_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
+
     customer_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
+    message_from:{type: String , required : true},
+    message_to:{type: String , required : true},
     message:{type: String , required : true}
 });
 
