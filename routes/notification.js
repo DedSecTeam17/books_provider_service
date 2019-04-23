@@ -25,13 +25,11 @@ const NotificationController = require('../controllers/notification');
 // get order by provider id
 router.get('/notifications/:provider_id',restify_jwt({secret: 'secret'}),  NotificationController.index);
 
-
-
 router.get('/notifications/show/:notification_id',restify_jwt({secret: 'secret'}),  NotificationController.show);
 
 // moved to customer service
-router.post('/notifications', restify_jwt({secret: 'secret'}), NotificationController.create);
-router.put('/notifications/:notification_id', restify_jwt({secret: 'secret'}), NotificationController.update);
+router.post('/notifications',  NotificationController.create);
+router.put('/notifications/:notification_id', NotificationController.update);
 router.delete('/notifications/:notification_id', restify_jwt({secret: 'secret'}), NotificationController.delete);
 
 
