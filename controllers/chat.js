@@ -30,6 +30,8 @@ module.exports.create = async (req, res, next) => {
 
     const {
         provider_id,
+        message_from,
+        message_to,
 
         customer_id,
         message,
@@ -40,6 +42,8 @@ module.exports.create = async (req, res, next) => {
             {
                 provider_id: provider_id,
                 customer_id: customer_id,
+                message_from:message_from,
+                message_to:message_to,
                 message: message,
             }
         );

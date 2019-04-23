@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="" />
+    <list default="true" id="9ea3ad44-1ce3-4d20-8b8f-f3a74b54cc0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/models/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Chat.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/chat.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
@@ -64,11 +66,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/replay.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="80" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="80" />
+            <state relative-caret-position="299">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#220#412#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +192,6 @@
         <option value="$PROJECT_DIR$/controllers/order.js" />
         <option value="$PROJECT_DIR$/models/Notification.js" />
         <option value="$PROJECT_DIR$/controllers/notification.js" />
-        <option value="$PROJECT_DIR$/models/Chat.js" />
         <option value="$PROJECT_DIR$/controllers/chat.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/routes/user.js" />
@@ -203,6 +207,7 @@
         <option value="$PROJECT_DIR$/routes/order.js" />
         <option value="$PROJECT_DIR$/routes/notification.js" />
         <option value="$PROJECT_DIR$/routes/chat.js" />
+        <option value="$PROJECT_DIR$/models/Chat.js" />
       </list>
     </option>
   </component>
@@ -319,18 +324,17 @@
       <workItem from="1555868322956" duration="22000" />
       <workItem from="1555924746619" duration="1062000" />
       <workItem from="1556017726067" duration="600000" />
-      <workItem from="1556019005498" duration="2316000" />
+      <workItem from="1556019005498" duration="2400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83848000" />
+    <option name="totallyTimeSpent" value="83932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2965204" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2965204" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -346,7 +350,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.49917355" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.49917355" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Tail" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -419,16 +423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="12" column="3" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#220#412#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,6 +572,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="61" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#220#412#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
