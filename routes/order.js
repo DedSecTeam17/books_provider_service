@@ -35,5 +35,12 @@ router.put('/orders/:order_id', restify_jwt({secret: 'secret'}), OrderController
 router.delete('/orders/:order_id', restify_jwt({secret: 'secret'}), OrderController.delete);
 
 
+//add order line ----------->
+router.get('/orders/:order_id/order_line',  OrderController.allOrderLine);
+router.get('/orders/:order_id/order_line/:order_line_id',  OrderController.showOrderLine);
+router.post('/orders/:order_id/order_line',  OrderController.createOrderLine);
+router.delete('/orders/:order_id/order_line/:order_line_id',  OrderController.deleteOrderLine);
+
+
 
 module.exports = router;

@@ -47,10 +47,65 @@ function checkForType(cp, file) {
 }
 
 
+module.exports.allOrderLine = async (req, res, next) => {
+    try {
+        const order = await Order.findById({_id: req.params.order_id});
+        const order_lines = await order.order_lines;
+        sendJsonResponse(res, order_lines, 200);
+    } catch (e) {
+        sendJsonResponse(res, e, 200);
+    }
+}
+
+
+module.exports.showOrderLine = async (req, res, next) => {
+    try {
+        const order = await Order.findById({_id: req.params.order_id});
+        const order_line = await order.order_lines.id(req.params.order_line_id);
+        sendJsonResponse(res, order_line, 200);
+    } catch (e) {
+        sendJsonResponse(res, e, 200);
+    }
+}
+
+
+module.exports.createOrderLine = async (req, res, next) => {
+    try {
+        const order = await Order.findById({_id: req.params.order_id});
+        const orderLines = order.order_lines;
+        const {book_id, quantity, price} = req.body;
+        orderLines.push({
+            book_id, quantity, price
+        });
+        const saved_order = await order.save();
+        sendJsonResponse(res, saved_order, 200);
+    } catch (e) {
+        sendJsonResponse(res, e, 404);
+    }
+}
+module.exports.deleteOrderLine = async (req, res, next) => {
+    try {
+        const order = await Order.findById({_id: req.params.order_id});
+        const  order_lines=order.order_lines.id(req.params.order_line_id);
+          order_lines.remove()
+        await  order.save();
+        sendJsonResponse(res, {
+            "message" : "order line deleted successfully"
+        }, 200);
+
+    } catch (e) {
+        sendJsonResponse(res, e, 200);
+
+    }
+}
+
+
 module.exports.index = async (req, res, next) => {
 
     try {
         const oreders = await Order.find({provider_id: req.params.provider_id});
+
+
 
         sendJsonResponse(res, oreders, 200);
     } catch (e) {
@@ -69,7 +124,6 @@ module.exports.show = async (req, res, next) => {
 }
 
 
-
 ///orders/provider/:provider_id/customer/:customer_id/book/:book_id
 // provider_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
 //     book_id: {type: mongoose.SchemaTypes.ObjectId, required: true},
@@ -83,30 +137,22 @@ module.exports.show = async (req, res, next) => {
 //     total_price: {type: String, required: true}
 module.exports.create = async (req, res, next) => {
 
-    const  {
+    const {
         State,
-        total_price,
         lat,
         long,
-        quantity,
-    }=req.body;
+    } = req.body;
 
     try {
-        const order =  Order(
+        const order = Order(
             {
-                provider_id : req.params.provider_id,
-                book_id : req.params.book_id,
-                customer_id : req.params.customer_id,
-                State : State,
-                total_price : total_price,
-                user_location : {
-                    lat : lat,
-                    long : long
+                provider_id: req.params.provider_id,
+                customer_id: req.params.customer_id,
+                State: State,
+                user_location: {
+                    lat: lat,
+                    long: long
                 },
-                quantity :quantity
-
-
-
             }
         );
 
@@ -125,7 +171,7 @@ module.exports.create = async (req, res, next) => {
 
 module.exports.update = async (req, res, next) => {
     try {
-        const order = await Order.findOneAndUpdate({_id:req.params.order_id},{State : req.body.State});
+        const order = await Order.findOneAndUpdate({_id: req.params.order_id}, {State: req.body.State});
 
         sendJsonResponse(res, order, 200);
     } catch (e) {
@@ -146,7 +192,6 @@ module.exports.delete = async (req, res, next) => {
 
     }
 }
-
 
 
 function sendJsonResponse(res, data, status) {
