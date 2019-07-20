@@ -10,6 +10,8 @@ const BooksController = require('../controllers/book');
 
 //user_id
 
+//allBooks
+router.get('/users/allBooks',  BooksController.allBooks);
 
 router.get('/users/:user_id/books',  BooksController.index);
 

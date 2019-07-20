@@ -58,8 +58,28 @@ module.exports.index = async (req, res, next) => {
 
     }
 
-
 }
+
+
+module.exports.allBooks= async (req,res,next)=>{
+    try {
+        const  allBooks=[];
+        const users = await User.find({});
+        for (let i = 0; i <users.length ; i++) {
+            const user=users[i];
+            for (let j = 0; j <user.books.length ; j++) {
+                allBooks.push(user.books[j]);
+            }
+        }
+        sendJsonResponse(res, allBooks, 200);
+    }catch (e) {
+        sendJsonResponse(res, e, 200);
+
+    }
+}
+
+
+
 
 
 module.exports.show = async (req, res, next) => {

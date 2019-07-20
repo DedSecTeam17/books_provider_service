@@ -75,6 +75,10 @@ module.exports.signIn = async function (req, res, next) {
     }
 
 };
+
+
+
+
 module.exports.signUp = async (req, res, next) => {
     const {email, password, name, about} = req.body;
     const newUser = new User({
@@ -132,6 +136,10 @@ module.exports.getUser = async (req, res, next) => {
         sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
 };
+
+
+
+
 module.exports.createProfile = async (req, res, next) => {
     try {
         const {about, phone_number, job} = req.body;
@@ -237,17 +245,6 @@ module.exports.updateUser= async  (req,res)=>{
         sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 module.exports.passwordReset = async (req, res) => {
