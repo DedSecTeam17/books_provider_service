@@ -96,12 +96,24 @@ module.exports.show = async (req, res, next) => {
 
 module.exports.showWithOutUserId = async (req, res, next) => {
     try {
-        let  user={};
+        let  book={};
+        let user={};
         const users = await User.find({});
         for (let i = 0; i <users.length ; i++) {
-             user=users[i].books.id(req.params.book_id);
+             book=users[i].books.id(req.params.book_id);
+             user=users[i];
         }
-        sendJsonResponse(res, user, 200);
+        sendJsonResponse(res, {
+            "user_id":user._id,
+            "_id":book._id,
+            "title":book.title,
+            "author":book.author,
+            "reviews" : book.reviews,
+            "publish_at":book.publish_at,
+            "category_id":book.category_id,
+            "price":book.price,
+            "book_image_path":book.book_image_path,
+        },200);
     }catch (e) {
         sendJsonResponse(res, e, 200);
 

@@ -91,7 +91,7 @@ module.exports.create = async (req, res, next) => {
         });
         const saved_user = await user.save();
 
-        sendJsonResponse(res, saved_user, 200);
+        sendJsonResponse(res, saved_user.books.id(req.params.book_id).reviews, 200);
 
     } catch (e) {
         sendJsonResponse(res, e.message, 200);
