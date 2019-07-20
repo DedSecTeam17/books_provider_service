@@ -68,10 +68,7 @@ module.exports.allBooks= async (req,res,next)=>{
         for (let i = 0; i <users.length ; i++) {
             const user=users[i];
             for (let j = 0; j <user.books.length ; j++) {
-                allBooks.push({
-                    "user_id" : user._id,
-                    "book" : user.books[j]
-                });
+                allBooks.push(  user.books[j]);
             }
         }
         sendJsonResponse(res, allBooks, 200);
