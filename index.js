@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const  restify_jwt=require('restify-jwt-community');
 require('dotenv').config()
 const express = require('express');
+const  corsMiddleware =require('resti')
 const app = express();
 const  cors=require('cors');
 
@@ -41,8 +42,6 @@ server.use(restify.plugins.bodyParser());
 app.listen(process.env.PORT || 5000, () => {
     mongoose.set('useFindAndModify',false);
     mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true}).then(()=>{
-
-
         console.log("Connected")
     });
 });
@@ -68,6 +67,8 @@ db.on('open', () => {
     // require('./routes/post')(server);
     // require('./routes/comment')(server);
 
+
+
     app.use('/api',user_route);
     app.use('/api',book_route);
     app.use('/api',order_route);
@@ -75,9 +76,6 @@ db.on('open', () => {
     app.use('/api',chat_route);
     app.use('/api',review_route);
     app.use('/api',replay_route);
-
-
-
 
     console.log(`server start on port ---> ${process.env.PORT}`);
 });
